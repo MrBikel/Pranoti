@@ -1,0 +1,17 @@
+0163f26cc60b4a70c17beefa81f6bca785855a313b8160fa7e62bebca1bd12c0  ./ATTRIBUTION-LICENSE-NOTICE.txt
+3577cca1e9592b6141d256b7791630e25e305207620bf4f01a3976b4506cbf7d  ./CHANGELOG.md
+8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643  ./LICENSE-GPL-2.txt
+9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748  ./Pranoti-Regular-v0.120-Private-Owner-Review.ttf
+6107b5ffa1987763e03a52cd42712da3adeadab3fabc4c767c9d4e93fe88d560  ./README.md
+e3020b0be43d0720c06a0534daf6bb51a56faa970d9b5520155cfeef79764f47  ./RELEASE-NOTES.md
+fde026c8fff3e333916a5cb90cdc9586a3199d6f9a2b7067eb2feaf06bdea667  ./TEST-SUMMARY.md
+db290eb342140cddedb7198b0a8325fde97ce7889360373ebaa15bfa985ff163  ./checks/consonant-pair-grid-v0.120.tsv
+e1ebe575aeb899e70082be1dd3318fe8eaa1e1e1fffbca020103eff556d005bf  ./checks/harfbuzz-22-samples-v0.120.tsv
+5274626321d42252a530610c2a1220c1ec4baeed01e44b41d6fccf5f895dced9  ./checks/summary-v0.120.txt
+66a969bc0277bc0aff93d49a9e89fc5701c53f8db515df28ad973b6e36d667ee  ./inputs/Pranoti-Regular-v0.119.ttf
+c25f8529621b92a161841245b64546c6f5d5bf1ae07956e848f83f1f93bf63d1  ./source/Pranoti-Regular-v0.119.sfd
+fece45702a58f6120bbfec99bbf0b6537905c6efe1d1627ce4a655bb261810dd  ./source/candrabindu-C-contextual-mark.fea
+8830095a2460f8cfbf010df8e041f4dc33efd5618246541a92e3a95b0eb5e5a1  ./specimens/c-position-contexts-v0.120-beta.png
+08377b18c65c7126ba7bf92c7355871bf0ed555e777eac6970b96d36f2dd83fc  ./specimens/matched-v0.119-v0.120-C-position-review.png
+73afef1f898b29c68974037255f39a6d956ddc00ffdc877607c4f180743ab47f  ./tools/build_pranoti_v0120_review.py
+6e47d44ada4d6bbf4304401196ee5983f47c4af1d2d96ba93349f1aece07564c  ./tools/verify_pranoti_v0120_review.py

@@ -1,0 +1,10 @@
+PRANOTI v0.120 — EXPERIMENTAL PUBLIC BETA: TEST SUMMARY
+Baseline v0.119 SHA-256: 66a969bc0277bc0aff93d49a9e89fc5701c53f8db515df28ad973b6e36d667ee
+Review font SHA-256: 9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748
+Approved exact HarfBuzz C offsets at UPM 1536: কাঁ −450,+125; চাঁ −278,+125; ক্ষ্মাঁ −632,+125.
+HarfBuzz representative samples: 22; all exact context, substitution, cluster, advance, and positioning checks passed: True.
+Consonant pair grid: 1369/1369 identical; .notdef=0.
+FontTools table comparison: only GPOS, name, and dependent head data differ; GSUB, outlines, metrics, cmap, GDEF, attribution and license name records preserved.
+Matched FreeType/Pillow RAQM specimen generated: 1200 x 2532 pixels.
+Release status: experimental public beta only; not production signed off.
+RESULT: PASS for the listed isolated shaping and regression checks; OTS and FontForge are reported separately.

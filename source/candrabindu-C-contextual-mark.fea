@@ -1,0 +1,10 @@
+languagesystem beng dflt;
+
+# Experimental public beta; non-production. Each rule targets only the final
+# bn_candrabindu glyph when preceded by the exact owner-reviewed glyph pair.
+# Values are the selected C offsets from immutable v0.119 in font units.
+feature mark {
+  pos bn_ka bn_aakaar bn_candrabindu' <-450 125 0 0>;
+  pos bn_ca bn_aakaar bn_candrabindu' <-278 125 0 0>;
+  pos bn_k_ss_ma bn_aakaar bn_candrabindu' <-632 125 0 0>;
+} mark;
