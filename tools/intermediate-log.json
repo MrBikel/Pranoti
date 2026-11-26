@@ -1,0 +1,123 @@
+{
+ "retraces": {
+  "bn_nya": {
+   "cell": "cons_16_r1c10.png",
+   "otsu": 193,
+   "contours": 2,
+   "scale": 19.2278,
+   "target_box": [
+    -70,
+    -2,
+    1716,
+    1150
+   ],
+   "new_box": [
+    -48,
+    -2,
+    1696,
+    1155
+   ]
+  },
+  "bn_sa": {
+   "cell": "cons_16_r4c1.png",
+   "otsu": 189,
+   "contours": 2,
+   "scale": 17.0719,
+   "target_box": [
+    -197,
+    24,
+    1281,
+    1158
+   ],
+   "new_box": [
+    -212,
+    22,
+    1287,
+    1160
+   ]
+  }
+ },
+ "surgery": {
+  "bn_ga": {
+   "stem_top": "1383 -> 1226 (bar top): deleted the stem-top excursion (pts i0-i8, i187-i193); contour now runs i186 (721,1139) -> i9 (818,1207), the bar top edge",
+   "tail_tip_x": "28-42 -> 63-77 (+35)",
+   "bbox_before": [
+    -80,
+    49,
+    1139,
+    1383
+   ],
+   "bbox_after": [
+    -80,
+    49,
+    1139,
+    1226
+   ],
+   "points": "194 -> 178"
+  },
+  "bn_da": {
+   "tail_tip": "(1022,-1) -> (980,50); tip pts moved up-left 28-48",
+   "diagonal": "lower-right pts i37-i40,i80-i81 moved -30x",
+   "bbox_before": [
+    -76,
+    -5,
+    1048,
+    1157
+   ],
+   "bbox_after": [
+    -76,
+    50,
+    1044,
+    1157
+   ]
+  },
+  "bn_uu": {
+   "fork": "deleted pts i81-i101 (weaker 2nd tail stroke, ~30u wide); inserted off-curve (520,380) after i80; old i102 on-curve",
+   "points": "172 -> 152",
+   "bbox_before": [
+    -41,
+    116,
+    1169,
+    1617
+   ],
+   "bbox_after": [
+    -41,
+    116,
+    1169,
+    1617
+   ]
+  },
+  "bn_aa": {
+   "hook_top": "1336 -> 1157 (pts i1-i8 capped)",
+   "stem": "left edge x->1525 (i24-i29), right edge x->1445 (i35-i37, i170-i174)",
+   "bbox_before": [
+    -199,
+    -1,
+    1789,
+    1336
+   ],
+   "bbox_after": [
+    -199,
+    -1,
+    1789,
+    1157
+   ]
+  },
+  "bn_na": {
+   "stub": "tip i41 (599,446) -> (520,500); controls i40 -> (490,475), i42 -> (555,460); stub now overlaps loop (c1) ~30u; merge by removeOverlap in the FontForge step",
+   "contours_before": 4,
+   "bbox_before": [
+    -170,
+    -10,
+    1096,
+    1157
+   ],
+   "bbox_after": [
+    -170,
+    -10,
+    1096,
+    1157
+   ]
+  }
+ }
+}
