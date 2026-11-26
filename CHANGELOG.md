@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.140-beta — Experimental public beta
+
+- **Polish & sharpen pass on the 73 handwriting glyphs** (user's request, 2026-11-26): one pass of a 7-point binomial smoothing kernel over each outline contour (per-point move capped at 5 units, max bbox drift 5 units) plus merging of near-duplicate points. Same handwriting, cleaner and sharper edges. Measured: points 23,413 -> 23,345; median stroke width stays ~110 units (target ~112); median stroke-width variation (IQR) 22.2 -> 19.5 units (12% narrower); FontForge bit-4 flags 33 -> 28 glyphs. Full per-glyph log: `POLISH-LOG-v0.140.md`. Build: `tools/build_pranoti_v0140_beta.py`.
+- **Nothing else changed:** advances, side bearings, anchors, GSUB/GPOS/GDEF, cmap and all AdorshoLipi glyphs are byte-identical to v0.130 (every table except glyf, head, name, maxp, loca and the derived hhea metric) — verification re-passed 22/22 HarfBuzz samples (3 reviewed candrabindu offsets exact) and 1,369/1,369 consonant-pair checks, OTS sanitised clean. The derived `hhea.minRightSideBearing` moved -660 -> -654 because smoothing moved bn_ikaar's leftmost point ~6 units; it is metadata only and now matches the v0.120 value.
+- **Experimental only; not production-ready.** Conjunct ligatures are still AdorshoLipi, expert sign-off and broad platform testing remain outstanding; see the [README](README.md) and [test summary](TEST-SUMMARY.md).
+
 ## v0.130-beta — Experimental public beta
 
 - **Batch 1 handwriting replacement (user's strategy: progressively replace AdorshoLipi with John's handwriting):** 69 core glyph outlines replaced with John's handwriting from `inputs/Pranoti-Handwriting-v4.ttf` (UPM 1000 → 1536, fitted to the GitHub font's baseline, advance widths and side bearings; v4 advances never imported). 11 vowels, 35 consonants, 10 digits, 13 vowel signs/marks. The hasanta (`bn_hasanta`) was deliberately kept AdorshoLipi — the v4 outline does not scale to the GitHub font's full-height diagonal slash. 7 core codepoints stay AdorshoLipi for now (ঌ U+098C absent from v4; ঍ U+098D, ঎ U+098E, ঑ U+0991, ঒ U+0992, ৰ U+09F0, ৱ U+09F1 not in the cmap at all). Full per-glyph log: `REPLACEMENT-LOG-v0.130.md`. Build: `tools/build_pranoti_v0130_beta.py`.

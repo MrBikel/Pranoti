@@ -1,6 +1,18 @@
-# v0.130-beta test summary
+# Pranoti — test summaries
 
 > **Status: experimental public beta, not production-ready.** These results cover bounded checks only and are not expert type-design sign-off or broad compatibility testing.
+
+## v0.140-beta
+
+- FontTools table comparison vs v0.120 recorded changes limited to GPOS, GDEF (new glyph classes only, from v0.130), glyf, hmtx, cmap, head, name, maxp and loca. GSUB, OS/2 and attribution/license name records were preserved. Glyph count is 652. hmtx is unchanged vs v0.130 (verified by the build assertion); only the derived `hhea.minRightSideBearing` moved -660 -> -654 (bn_ikaar's leftmost point moved ~6 units during smoothing — metadata only).
+- HarfBuzz checks passed for **22 representative shaping samples**, including the exact offsets for `কাঁ` (−450,+125), `চাঁ` (−278,+125), and `ক্ষ্মাঁ` (−632,+125) at UPM 1536. Sample results are in `checks/harfbuzz-22-samples-v0.140.tsv`.
+- **1,369/1,369** Bengali consonant-pair regression checks matched the v0.120 baseline; the recorded grid has no `.notdef` results. Data is in `checks/consonant-pair-grid-v0.140.tsv`.
+- The 4 new glyphs (U+0980, U+09FB, U+09FC, U+09FE) still render (no `.notdef`) and shape correctly. Candrabindu was checked on all 55 bases and 375 ligatures: the mark sits above the base with its outline overlapping the base span in every case.
+- OpenType Sanitizer **8.2.1** reported “File sanitized successfully.” FontForge **20230101** read the font and reported 652 glyphs; its validation returned 36: bit 32 (glyphs in the mark lookups have no FontForge anchor points — expected, as in v0.130) and bit 4 on 28 glyphs (down from 33 in v0.130; traced handwriting outlines with points ~1 font unit apart — cosmetic only). This is not independent design validation.
+- Two FreeType/Pillow RAQM specimens were produced for visual review: a matched v0.130/v0.140 review at 12/16/24/32 px (`specimens/matched-v0.130-v0.140-review.png`) and a before/after grid with a paragraph and a 64 px close-up of the roughest glyphs (`specimens/before-after-v0.140.png`). Both were inspected: all 69 replaced glyphs sit on the baseline with no collisions; the polish is visible as cleaner edges at 64 px (mean raster change 3.8% of ink at 150 px, mostly sub-pixel edge shifts); at 12/16 px the rendering is unchanged in legibility. A specimen is illustrative, not proof of rendering across applications or devices.
+- v0.140 has not been owner-tested yet.
+
+## v0.130-beta
 
 ## Automated and recorded checks
 
