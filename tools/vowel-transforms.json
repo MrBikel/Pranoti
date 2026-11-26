@@ -1,0 +1,164 @@
+[
+ {
+  "glyph": "bn_i",
+  "char": "\u0987",
+  "scale": 1.02343,
+  "pivot": [
+   500.5,
+   720.0
+  ],
+  "dy": 0.5,
+  "ink_top_before": 1595,
+  "ink_top_target": 1616,
+  "before": {
+   "bbox": [
+    -161.0,
+    -156.0,
+    1163.0,
+    1595.0
+   ],
+   "width": 989,
+   "validate": 0,
+   "n_contours": 2,
+   "signed_areas": [
+    -160046.0,
+    -285885.0
+   ]
+  },
+  "after": {
+   "bbox": [
+    -176.5,
+    -176.0,
+    1178.5,
+    1616.0
+   ],
+   "width": 989,
+   "validate": 524288,
+   "n_contours": 2,
+   "signed_areas": [
+    -167633.0,
+    -299437.7
+   ]
+  }
+ },
+ {
+  "glyph": "bn_e",
+  "char": "\u098f",
+  "scale": 1.03671,
+  "pivot": [
+   550.5,
+   575.0
+  ],
+  "dy": -1.0,
+  "ink_top_before": 1147,
+  "ink_top_target": 1167,
+  "before": {
+   "bbox": [
+    -29.0,
+    2.0,
+    1131.0,
+    1147.0
+   ],
+   "width": 1216,
+   "validate": 0,
+   "n_contours": 1,
+   "signed_areas": [
+    -305200.0
+   ]
+  },
+  "after": {
+   "bbox": [
+    -50.3,
+    -20.0,
+    1152.3,
+    1167.0
+   ],
+   "width": 1216,
+   "validate": 524288,
+   "n_contours": 1,
+   "signed_areas": [
+    -328021.2
+   ]
+  }
+ },
+ {
+  "glyph": "bn_ai",
+  "char": "\u0990",
+  "scale": 1.0288,
+  "pivot": [
+   634.5,
+   865.0
+  ],
+  "dy": -5.0,
+  "ink_top_before": 1733,
+  "ink_top_target": 1753,
+  "before": {
+   "bbox": [
+    -76.0,
+    -4.0,
+    1346.0,
+    1733.0
+   ],
+   "width": 1267,
+   "validate": 0,
+   "n_contours": 1,
+   "signed_areas": [
+    -429867.5
+   ]
+  },
+  "after": {
+   "bbox": [
+    -96.5,
+    -34.0,
+    1366.5,
+    1753.0
+   ],
+   "width": 1267,
+   "validate": 524288,
+   "n_contours": 1,
+   "signed_areas": [
+    -454986.2
+   ]
+  }
+ },
+ {
+  "glyph": "bn_au",
+  "char": "\u0994",
+  "scale": 1.01073,
+  "pivot": [
+   648.0,
+   891.0
+  ],
+  "dy": 3.5,
+  "ink_top_before": 1683,
+  "ink_top_target": 1695,
+  "before": {
+   "bbox": [
+    32.0,
+    98.9,
+    1265.0,
+    1683.0
+   ],
+   "width": 1298,
+   "validate": 32,
+   "n_contours": 1,
+   "signed_areas": [
+    -391980.0
+   ]
+  },
+  "after": {
+   "bbox": [
+    25.4,
+    93.9,
+    1271.6,
+    1695.0
+   ],
+   "width": 1298,
+   "validate": 524288,
+   "n_contours": 1,
+   "signed_areas": [
+    -400267.7
+   ]
+  }
+ }
+]
