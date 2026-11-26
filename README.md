@@ -1,18 +1,18 @@
-# Pranoti AdorshoLipi v0.120-beta
+# Pranoti AdorshoLipi v0.130-beta
 
 > **Experimental public beta — not production-ready.** This is an installable review build for testing, not a final font release. Installability does not mean production approval.
 
-Pranoti v0.120-beta is a narrowly scoped update to **AdorshoLipi by Partha Sarathi Pal**. It adjusts the placement of the Bengali candrabindu in exactly three approved contexts. The distributed TrueType font is preserved byte-for-byte from the reviewed build; its internal family name is **Pranoti v0.120 Review**.
+Pranoti v0.130-beta continues **AdorshoLipi by Partha Sarathi Pal** with the owner's strategy: progressively replace AdorshoLipi's glyphs with the owner's handwriting, glyph by glyph, until the whole font is his. This batch replaces 69 core glyphs with handwriting outlines, adds the 4 previously missing codepoints, and generalises candrabindu positioning to all bases. The distributed TrueType font's internal family name is **Pranoti**.
 
 ## Download and install
 
-Download [`Pranoti-Regular-v0.120-Private-Owner-Review.ttf`](https://github.com/MrBikel/Pranoti/releases/download/v0.120-beta/Pranoti-Regular-v0.120-Private-Owner-Review.ttf) from the [v0.120-beta release](https://github.com/MrBikel/Pranoti/releases/tag/v0.120-beta). Verify its SHA-256 before installing:
+`Pranoti-Regular-v0.130-beta.ttf` (local build; no GitHub release published yet — do not push or publish without the owner's approval). Verify its SHA-256 before installing:
 
 ```text
-9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748
+192881342d917e688000a51b9bea643c9ce21ec6123110b80adcfb6a8fcbebda
 ```
 
-- **Windows:** Right-click the downloaded `.ttf` and choose **Install** (or **Install for all users** if appropriate). Close and reopen apps that use fonts. Remove any earlier v0.120 Review copy first to avoid cached or duplicate versions.
+- **Windows:** Right-click the downloaded `.ttf` and choose **Install** (or **Install for all users** if appropriate). Close and reopen apps that use fonts. Remove any earlier Pranoti copy first to avoid cached or duplicate versions.
 - **macOS:** Open the `.ttf` in Font Book and choose **Install Font**. Restart the target app if it was already open.
 - **Linux:** Copy the file to `~/.local/share/fonts/`, then run `fc-cache -f` and restart the target app.
 
@@ -20,36 +20,35 @@ These are general installation steps, not a compatibility claim. Browsers, mobil
 
 ## What changed
 
-The GPOS `mark` feature positions the candrabindu only in these three contexts (UPM 1536):
+- **69 core glyphs are now John's handwriting** (11 vowels, 35 consonants, 10 digits, 13 vowel signs/marks), fitted to the v0.120 metrics: same baseline, advance widths and side bearings. The hasanta was deliberately kept AdorshoLipi. 7 core codepoints stay AdorshoLipi for now (see limitations). Per-glyph log: `REPLACEMENT-LOG-v0.130.md`.
+- **4 new glyphs, designed from scratch in AdorshoLipi's style:** U+0980 ANJI, U+09FB GANDA MARK, U+09FC VEDIC ANUSVARA, U+09FE SANDHI MARK.
+- **Candrabindu (U+0981) is now anchor-based over all bases:** the three reviewed offsets are preserved exactly — `কাঁ` Δ(−450,+125), `চাঁ` Δ(−278,+125), `ক্ষ্মাঁ` Δ(−632,+125) — and the mark is now positioned over all 55 bases and 375 ligatures (e.g. `গাঁ` now positions correctly; it did not before).
+- GDEF glyph classes (base / ligature / mark) were added so shaping engines apply the mark lookups. No GSUB changes were made.
 
-| Bengali context | GPOS offset (font units) |
-|---|---:|
-| `কাঁ` | Δ(−450, +125) |
-| `চাঁ` | Δ(−278, +125) |
-| `ক্ষ্মাঁ` | Δ(−632, +125) |
-
-No GSUB changes were made. Other candrabindu contexts are not covered by these new rules. See the [changelog](CHANGELOG.md), [test summary](TEST-SUMMARY.md), and [specimen](specimens/c-position-contexts-v0.120-beta.png).
+See the [changelog](CHANGELOG.md), [test summary](TEST-SUMMARY.md), [replacement log](REPLACEMENT-LOG-v0.130.md), and [specimens](specimens/before-after-v0.130.png) (before/after) and [specimens](specimens/matched-v0.120-v0.130-review.png) (matched review).
 
 ## Clear limitations
 
-- **Bengali coverage is 92/96** in the reviewed coverage set. These codepoints are missing: **U+0980, U+09FB, U+09FC, and U+09FE**.
-- **GPOS scope is limited to exactly three contexts:** `কাঁ`, `চাঁ`, and `ক্ষ্মাঁ`. No general candrabindu repositioning is claimed.
+- **Bengali coverage is now 96/96 in the reviewed coverage set** (the 4 previously missing codepoints were added). Still absent from the cmap: **U+098D, U+098E, U+0991, U+0992** (঍, ঎, ঑, ঒) and Assamese **U+09F0, U+09F1** (ৰ, ৱ).
+- **Conjunct ligatures are still AdorshoLipi.** The ~64 conjuncts from the handwriting sheets have not been replaced yet; that is the next batch.
+- **7 core codepoints are still AdorshoLipi:** ঌ (U+098C, absent from the handwriting source), plus the six absent from the cmap listed above.
+- **The handwriting outlines are traced, not redrawn:** some glyphs are rough (ঋ, ঝ, ঙ keep rough traced shapes; ধ's top loop is slightly pinched). No kerning or GPOS pair positioning beyond candrabindu.
 - **Expert type-design sign-off is pending.** Broad testing across Microsoft Office/Word, browsers, mobile platforms, printing, and other target environments is also pending.
-- The owner reported testing on **Windows 11 Home with Microsoft Word** and said everything looked okay. This is an owner-reported result only, not independent QA; specific test cases and broad compatibility were not established.
+- The owner reported testing v0.120 on **Windows 11 Home with Microsoft Word** and said everything looked okay. This is an owner-reported result only, not independent QA; specific test cases and broad compatibility were not established. v0.130 has not been owner-tested yet.
 - The font's `OS/2 fsType=4` Preview & Print setting and the original GPL font-embedding exception are retained. This does not certify that every application will honor those terms or render the font identically.
 
 Please report issues with the application, operating system, font size, and a reproducible sample. Do not treat this beta as production-ready.
 
 ## Build and test materials
 
-This repository includes the editable FontForge source snapshot, the approved FEA rules, the v0.119 baseline input required by the build, build and verification scripts, selected shaping-test data, a checksum manifest, and a beta-labelled specimen. The build uses FontTools; the verification script also requires `hb-shape` and Pillow with RAQM support.
+This repository includes the editable FontForge source snapshot, the v0.120 baseline, the handwriting source (`inputs/Pranoti-Handwriting-v4.ttf`), the new-glyphs source (`inputs/new-glyphs-v0130.ttf`, drawn with `tools/draw_new_glyphs.py`), build and verification scripts, selected shaping-test data, a checksum manifest, and beta-labelled specimens. The build uses FontTools; the verification script also requires `hb-shape` and Pillow with RAQM support.
 
 ```bash
-python3 tools/build_pranoti_v0120_review.py
-python3 tools/verify_pranoti_v0120_review.py
+python3 tools/build_pranoti_v0130_beta.py
+python3 tools/verify_pranoti_v0130_beta.py
 ```
 
-The build should reproduce the distributed font hash above. The exact binary retains its original review-specific internal naming so it remains distinguishable from v0.119; do not interpret that metadata as production sign-off.
+The build verifies the v0.120, v4 and new-glyphs input hashes before building. The v0.130 output hash is in `CHECKSUMS-SHA256.txt`.
 
 ## License and attribution
 
@@ -57,4 +56,4 @@ This derivative is distributed under the original font's **GNU GPL version 2 or 
 
 ## বাংলায় সংক্ষেপে
 
-এটি **পরীক্ষামূলক public beta—production-ready নয়**। ইনস্টল করা যায়, কিন্তু উৎপাদন ব্যবহারের অনুমোদন নেই। বাংলা coverage **92/96**; অনুপস্থিত **U+0980, U+09FB, U+09FC, U+09FE**। নতুন GPOS কেবল `কাঁ`, `চাঁ`, ও `ক্ষ্মাঁ`—এই তিনটি নির্দিষ্ট প্রসঙ্গে প্রযোজ্য। বিশেষজ্ঞের sign-off এবং Word/Office, browser, mobile, printসহ বিভিন্ন প্ল্যাটফর্মে বিস্তৃত পরীক্ষা বাকি। Windows 11 Home ও Microsoft Word-এ মালিকের পরীক্ষা সফল বলে জানানো হয়েছে; এটি স্বাধীন QA নয়।
+এটি **পরীক্ষামূলক public beta—production-ready নয়**। ইনস্টল করা যায়, কিন্তু উৎপাদন ব্যবহারের অনুমোদন নেই। এই সংস্করণে ৬৯টি মূল অক্ষর এখন মালিকের হাতের লেখা; আগে অনুপস্থিত ৪টি অক্ষর (U+0980, U+09FB, U+09FC, U+09FE) নতুন করে আঁকা হয়েছে, ফলে পর্যালোচিত coverage এখন **৯৬/৯৬**। চন্দ্রবিন্দু এখন সব অক্ষরের ওপরে anchor-based পদ্ধতিতে বসে; আগের তিনটি পর্যালোচিত অবস্থান (`কাঁ`, `চাঁ`, `ক্ষ্মাঁ`) হুবহু একই আছে। যুক্তাক্ষর এখনো AdorshoLipi—পরের ধাপে হাতের লেখা দিয়ে বদলানো হবে। বিশেষজ্ঞের sign-off এবং Word/Office, browser, mobile, printসহ বিভিন্ন প্ল্যাটফর্মে বিস্তৃত পরীক্ষা বাকি।

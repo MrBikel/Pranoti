@@ -1,23 +1,27 @@
-# v0.120-beta test summary
+# v0.130-beta test summary
 
 > **Status: experimental public beta, not production-ready.** These results cover bounded checks only and are not expert type-design sign-off or broad compatibility testing.
 
 ## Automated and recorded checks
 
-- FontTools table comparison recorded changes limited to GPOS, name strings, and dependent `head` checksum/timestamp data. GSUB, outlines, metrics, cmap, GDEF, and attribution/license name records were preserved.
-- HarfBuzz checks passed for **22 representative shaping samples**, including the exact offsets for `কাঁ` (−450,+125), `চাঁ` (−278,+125), and `ক্ষ্মাঁ` (−632,+125) at UPM 1536. Sample results are in `checks/harfbuzz-22-samples-v0.120.tsv`.
-- **1,369/1,369** Bengali consonant-pair regression checks matched the v0.119 baseline; the recorded grid has no `.notdef` results. Data is in `checks/consonant-pair-grid-v0.120.tsv`.
-- OpenType Sanitizer **8.2.1** reported “File sanitized successfully.” FontForge **20230101** read the font and reported 648 glyphs; its log recorded `FONT_VALIDATE=0`, so this is not represented as an independent design validation.
-- A matched FreeType/Pillow RAQM specimen was produced for visual review. A specimen is illustrative, not proof of rendering across applications or devices.
+- FontTools table comparison recorded changes limited to GPOS, GDEF (new glyph classes only), glyf, hmtx, cmap, head, name, maxp and loca. GSUB, OS/2 and attribution/license name records were preserved. Glyph count is 652 (648 + 4 new).
+- HarfBuzz checks passed for **22 representative shaping samples**, including the exact offsets for `কাঁ` (−450,+125), `চাঁ` (−278,+125), and `ক্ষ্মাঁ` (−632,+125) at UPM 1536. Sample results are in `checks/harfbuzz-22-samples-v0.130.tsv`.
+- **1,369/1,369** Bengali consonant-pair regression checks matched the v0.120 baseline; the recorded grid has no `.notdef` results. Data is in `checks/consonant-pair-grid-v0.130.tsv`.
+- The 4 new glyphs (U+0980, U+09FB, U+09FC, U+09FE) all render (no `.notdef`) and shape correctly. Candrabindu was checked on all 55 bases and 375 ligatures: the mark sits above the base with its outline overlapping the base span in every case.
+- OpenType Sanitizer **8.2.1** reported “File sanitized successfully.” FontForge **20230101** read the font and reported 652 glyphs; its validation returned 36: bit 32 (glyphs in the mark lookups have no FontForge anchor points — expected, because the anchor-based GPOS was built with FontTools, which does not create FontForge glyph anchor points; HarfBuzz and OTS do not need them) and bit 4 on 33 glyphs (traced handwriting outlines with points ~1 font unit apart, plus the vedic anusvara's dot touching the bowl's top edge — cosmetic only; FreeType, HarfBuzz and OTS all accept the outlines, and the build already removes all exact duplicate points shape-preservingly). This is not independent design validation.
+- Two FreeType/Pillow RAQM specimens were produced for visual review: a matched v0.120/v0.130 review (`specimens/matched-v0.120-v0.130-review.png`) and a before/after grid with a paragraph (`specimens/before-after-v0.130.png`). The before/after was inspected: all 69 replaced glyphs sit on the baseline with no collisions; `অভিযাত্রী` shows the ী/া fix holding; `গাঁ`'s candrabindu now positions correctly; the 4 new glyphs render. A specimen is illustrative, not proof of rendering across applications or devices.
 
 ## Owner-reported application test
 
-The owner reported testing on **Windows 11 Home with Microsoft Word** and said, “everything okay.” This is reported with provenance, not independently verified. No detailed test-case list, Office build, independent reproduction, or evidence of Preview & Print embedding enforcement was supplied. It does not establish general Windows/Word compatibility.
+The owner reported testing v0.120 on **Windows 11 Home with Microsoft Word** and said, “everything okay.” This is reported with provenance, not independently verified. v0.130 has not been owner-tested yet.
 
 ## Known limitations and remaining work
 
-- Bengali coverage is **92/96** in the reviewed coverage set; **U+0980, U+09FB, U+09FC, and U+09FE** are missing.
-- New GPOS positioning is restricted to exactly **three** contexts: `কাঁ`, `চাঁ`, and `ক্ষ্মাঁ`. Other candrabindu contexts are unchanged and not covered by the new rules.
+- Bengali coverage is **96/96** in the reviewed coverage set. Still absent from the cmap: U+098D, U+098E, U+0991, U+0992 and Assamese U+09F0, U+09F1.
+- **Conjunct ligatures are still AdorshoLipi** (~64 conjuncts from the handwriting sheets not yet replaced). That is the next replacement batch.
+- 7 core codepoints are still AdorshoLipi: ঌ (U+098C) plus the six absent from the cmap above. The hasanta was deliberately kept AdorshoLipi.
+- Handwriting outlines are traced: ঋ, ঝ, ঙ keep rough shapes; ধ's top loop is slightly pinched. No kerning; no GPOS pair positioning beyond candrabindu.
+- Candrabindu anchors are calibrated for the common aakaar case, so on a bare vowel the mark sits a little right of centre (still over the letter).
 - Expert type-design sign-off remains outstanding.
 - Broad target-platform testing remains outstanding, including Microsoft Word/Office, other desktop applications, browsers, mobile platforms, and print workflows.
 - Production readiness is **not claimed**.
