@@ -1,0 +1,310 @@
+{
+ "bn_a": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 1,
+  "col": 3,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r1c3.png",
+  "score": 0.013,
+  "metrics": {
+   "area": 769,
+   "w": 57,
+   "h": 49,
+   "aspect": 1.16,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 151,
+   "bbox": [
+    8,
+    8,
+    64,
+    56
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036048_3_pr9o.jpg",
+   "row": 1,
+   "col": 7,
+   "score": 0.013
+  }
+ },
+ "bn_aa": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 2,
+  "col": 2,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r2c2.png",
+  "score": 0.018,
+  "metrics": {
+   "area": 978,
+   "w": 82,
+   "h": 55,
+   "aspect": 1.49,
+   "stroke": 4.0,
+   "edge_touch": 0,
+   "thr": 152,
+   "bbox": [
+    8,
+    7,
+    89,
+    61
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036048_3_pr9o.jpg",
+   "row": 2,
+   "col": 4,
+   "score": 0.018
+  }
+ },
+ "bn_i": {
+  "photo": "1000036048_3_pr9o.jpg",
+  "row": 3,
+  "col": 5,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_3_r3c5.png",
+  "score": 0.004,
+  "metrics": {
+   "area": 822,
+   "w": 50,
+   "h": 66,
+   "aspect": 0.76,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 146,
+   "bbox": [
+    7,
+    7,
+    56,
+    72
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036047_1_lxem.jpg",
+   "row": 3,
+   "col": 6,
+   "score": 0.004
+  }
+ },
+ "bn_ii": {
+  "photo": "1000036048_3_pr9o.jpg",
+  "row": 4,
+  "col": 1,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_3_r4c1.png",
+  "score": 0.006,
+  "metrics": {
+   "area": 948,
+   "w": 52,
+   "h": 75,
+   "aspect": 0.69,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 147,
+   "bbox": [
+    8,
+    8,
+    59,
+    82
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036047_1_lxem.jpg",
+   "row": 4,
+   "col": 1,
+   "score": 0.012
+  }
+ },
+ "bn_u": {
+  "photo": "1000036049_4_24mu.jpg",
+  "row": 5,
+  "col": 2,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_4_r5c2.png",
+  "score": 0.013,
+  "metrics": {
+   "area": 860,
+   "w": 51,
+   "h": 71,
+   "aspect": 0.72,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 141,
+   "bbox": [
+    8,
+    8,
+    58,
+    78
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036048_3_pr9o.jpg",
+   "row": 5,
+   "col": 2,
+   "score": 0.014
+  }
+ },
+ "bn_uu": {
+  "photo": "1000036048_3_pr9o.jpg",
+  "row": 6,
+  "col": 5,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_3_r6c5.png",
+  "score": 0.005,
+  "metrics": {
+   "area": 970,
+   "w": 53,
+   "h": 66,
+   "aspect": 0.8,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 134,
+   "bbox": [
+    8,
+    8,
+    60,
+    73
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036048_3_pr9o.jpg",
+   "row": 6,
+   "col": 4,
+   "score": 0.014
+  }
+ },
+ "bn_ri": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 7,
+  "col": 2,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r7c2.png",
+  "score": 0.015,
+  "metrics": {
+   "area": 960,
+   "w": 70,
+   "h": 53,
+   "aspect": 1.32,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 131,
+   "bbox": [
+    8,
+    8,
+    77,
+    60
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036049_4_24mu.jpg",
+   "row": 7,
+   "col": 2,
+   "score": 0.017
+  }
+ },
+ "bn_e": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 8,
+  "col": 3,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r8c3.png",
+  "score": 0.009,
+  "metrics": {
+   "area": 647,
+   "w": 48,
+   "h": 47,
+   "aspect": 1.02,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 131,
+   "bbox": [
+    8,
+    8,
+    55,
+    54
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036049_4_24mu.jpg",
+   "row": 8,
+   "col": 3,
+   "score": 0.02
+  }
+ },
+ "bn_ai": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 9,
+  "col": 3,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r9c3.png",
+  "score": 0.009,
+  "metrics": {
+   "area": 849,
+   "w": 56,
+   "h": 68,
+   "aspect": 0.82,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 131,
+   "bbox": [
+    8,
+    8,
+    63,
+    75
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036049_4_24mu.jpg",
+   "row": 9,
+   "col": 3,
+   "score": 0.014
+  }
+ },
+ "bn_o": {
+  "photo": "1000036049_4_24mu.jpg",
+  "row": 10,
+  "col": 5,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_4_r10c5.png",
+  "score": 0.004,
+  "metrics": {
+   "area": 647,
+   "w": 51,
+   "h": 46,
+   "aspect": 1.11,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 125,
+   "bbox": [
+    8,
+    8,
+    58,
+    53
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036047_1_lxem.jpg",
+   "row": 10,
+   "col": 5,
+   "score": 0.013
+  }
+ },
+ "bn_au": {
+  "photo": "1000036047_1_lxem.jpg",
+  "row": 11,
+  "col": 1,
+  "file": "/home/hatch/workspace/fonts/bengali-hand/v0160-prep/cells/vow_1_r11c1.png",
+  "score": 0.01,
+  "metrics": {
+   "area": 813,
+   "w": 52,
+   "h": 67,
+   "aspect": 0.78,
+   "stroke": 5.66,
+   "edge_touch": 0,
+   "thr": 135,
+   "bbox": [
+    8,
+    8,
+    59,
+    74
+   ]
+  },
+  "runner_up": {
+   "photo": "1000036048_3_pr9o.jpg",
+   "row": 11,
+   "col": 1,
+   "score": 0.019
+  }
+ }
+}

@@ -1,0 +1,942 @@
+{
+ "bn_a": {
+  "ch": "অ",
+  "adv": 1245,
+  "ink_after": [
+   -38,
+   9,
+   1254,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_aa": {
+  "ch": "আ",
+  "adv": 1619,
+  "ink_after": [
+   -29,
+   -5,
+   1616,
+   1341
+  ],
+  "kind": "letter"
+ },
+ "bn_i": {
+  "ch": "ই",
+  "adv": 989,
+  "ink_after": [
+   -62,
+   -175,
+   1063,
+   1616
+  ],
+  "kind": "letter"
+ },
+ "bn_ii": {
+  "ch": "ঈ",
+  "adv": 1079,
+  "ink_after": [
+   -44,
+   -35,
+   1096,
+   1599
+  ],
+  "kind": "letter"
+ },
+ "bn_u": {
+  "ch": "উ",
+  "adv": 1124,
+  "ink_after": [
+   -36,
+   129,
+   1152,
+   1626
+  ],
+  "kind": "letter"
+ },
+ "bn_uu": {
+  "ch": "ঊ",
+  "adv": 1177,
+  "ink_after": [
+   -63,
+   117,
+   1207,
+   1605
+  ],
+  "kind": "letter"
+ },
+ "bn_ri": {
+  "ch": "ঋ",
+  "adv": 1267,
+  "ink_after": [
+   42,
+   118,
+   1269,
+   1364
+  ],
+  "kind": "letter"
+ },
+ "bn_e": {
+  "ch": "এ",
+  "adv": 1216,
+  "ink_after": [
+   76,
+   -19,
+   1023,
+   1167
+  ],
+  "kind": "letter"
+ },
+ "bn_ai": {
+  "ch": "ঐ",
+  "adv": 1267,
+  "ink_after": [
+   58,
+   -33,
+   1209,
+   1753
+  ],
+  "kind": "letter"
+ },
+ "bn_o": {
+  "ch": "ও",
+  "adv": 1134,
+  "ink_after": [
+   36,
+   95,
+   1030,
+   1112
+  ],
+  "kind": "letter"
+ },
+ "bn_au": {
+  "ch": "ঔ",
+  "adv": 1298,
+  "ink_after": [
+   78,
+   94,
+   1217,
+   1695
+  ],
+  "kind": "letter"
+ },
+ "bn_ka": {
+  "ch": "ক",
+  "adv": 1197,
+  "ink_after": [
+   -16,
+   10,
+   1175,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_kha": {
+  "ch": "খ",
+  "adv": 1023,
+  "ink_after": [
+   36,
+   15,
+   1018,
+   1343
+  ],
+  "kind": "letter"
+ },
+ "bn_ga": {
+  "ch": "গ",
+  "adv": 1021,
+  "ink_after": [
+   55,
+   50,
+   1007,
+   1383
+  ],
+  "kind": "letter"
+ },
+ "bn_gha": {
+  "ch": "ঘ",
+  "adv": 993,
+  "ink_after": [
+   -15,
+   3,
+   989,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_nga": {
+  "ch": "ঙ",
+  "adv": 964,
+  "ink_after": [
+   18,
+   4,
+   898,
+   1110
+  ],
+  "kind": "letter"
+ },
+ "bn_ca": {
+  "ch": "চ",
+  "adv": 864,
+  "ink_after": [
+   -8,
+   108,
+   857,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_cha": {
+  "ch": "ছ",
+  "adv": 954,
+  "ink_after": [
+   -1,
+   -136,
+   971,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ja": {
+  "ch": "জ",
+  "adv": 1240,
+  "ink_after": [
+   -15,
+   47,
+   1237,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_jha": {
+  "ch": "ঝ",
+  "adv": 1158,
+  "ink_after": [
+   -4,
+   34,
+   1155,
+   1347
+  ],
+  "kind": "letter"
+ },
+ "bn_nya": {
+  "ch": "ঞ",
+  "adv": 1609,
+  "ink_after": [
+   81,
+   -6,
+   1543,
+   1153
+  ],
+  "kind": "letter"
+ },
+ "bn_tta": {
+  "ch": "ট",
+  "adv": 876,
+  "ink_after": [
+   -71,
+   164,
+   863,
+   1632
+  ],
+  "kind": "letter"
+ },
+ "bn_ttha": {
+  "ch": "ঠ",
+  "adv": 857,
+  "ink_after": [
+   -9,
+   129,
+   842,
+   1781
+  ],
+  "kind": "letter"
+ },
+ "bn_dda": {
+  "ch": "ড",
+  "adv": 1099,
+  "ink_after": [
+   5,
+   110,
+   1071,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ddha": {
+  "ch": "ঢ",
+  "adv": 878,
+  "ink_after": [
+   -13,
+   165,
+   861,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_nna": {
+  "ch": "ণ",
+  "adv": 950,
+  "ink_after": [
+   63,
+   48,
+   933,
+   1355
+  ],
+  "kind": "letter"
+ },
+ "bn_ta": {
+  "ch": "ত",
+  "adv": 1158,
+  "ink_after": [
+   -34,
+   114,
+   1136,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_tha": {
+  "ch": "থ",
+  "adv": 1005,
+  "ink_after": [
+   24,
+   -28,
+   1004,
+   1347
+  ],
+  "kind": "letter"
+ },
+ "bn_da": {
+  "ch": "দ",
+  "adv": 1007,
+  "ink_after": [
+   -19,
+   -6,
+   1012,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_dha": {
+  "ch": "ধ",
+  "adv": 948,
+  "ink_after": [
+   103,
+   6,
+   918,
+   1169
+  ],
+  "kind": "letter"
+ },
+ "bn_na": {
+  "ch": "ন",
+  "adv": 946,
+  "ink_after": [
+   -11,
+   -15,
+   939,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_pa": {
+  "ch": "প",
+  "adv": 1124,
+  "ink_after": [
+   82,
+   9,
+   1098,
+   1292
+  ],
+  "kind": "letter"
+ },
+ "bn_pha": {
+  "ch": "ফ",
+  "adv": 1281,
+  "ink_after": [
+   -29,
+   12,
+   1280,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ba": {
+  "ch": "ব",
+  "adv": 937,
+  "ink_after": [
+   -18,
+   -8,
+   927,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_bha": {
+  "ch": "ভ",
+  "adv": 1122,
+  "ink_after": [
+   -13,
+   131,
+   1091,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ma": {
+  "ch": "ম",
+  "adv": 1036,
+  "ink_after": [
+   -32,
+   4,
+   1035,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ya": {
+  "ch": "য",
+  "adv": 999,
+  "ink_after": [
+   -23,
+   24,
+   991,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ra": {
+  "ch": "র",
+  "adv": 935,
+  "ink_after": [
+   -16,
+   42,
+   923,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_la": {
+  "ch": "ল",
+  "adv": 1140,
+  "ink_after": [
+   -15,
+   30,
+   1131,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_sha": {
+  "ch": "শ",
+  "adv": 1068,
+  "ink_after": [
+   -95,
+   13,
+   1102,
+   1339
+  ],
+  "kind": "letter"
+ },
+ "bn_ssa": {
+  "ch": "ষ",
+  "adv": 986,
+  "ink_after": [
+   -21,
+   -1,
+   983,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_sa": {
+  "ch": "স",
+  "adv": 1101,
+  "ink_after": [
+   -4,
+   21,
+   1081,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_ha": {
+  "ch": "হ",
+  "adv": 888,
+  "ink_after": [
+   -30,
+   -166,
+   968,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_rra": {
+  "ch": "ড়",
+  "adv": 1101,
+  "ink_after": [
+   -14,
+   -220,
+   1101,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_rha": {
+  "ch": "ঢ়",
+  "adv": 890,
+  "ink_after": [
+   -23,
+   -156,
+   883,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_yya": {
+  "ch": "য়",
+  "adv": 989,
+  "ink_after": [
+   -20,
+   -278,
+   988,
+   1157
+  ],
+  "kind": "letter"
+ },
+ "bn_zero": {
+  "ch": "০",
+  "adv": 1054,
+  "ink_after": [
+   120,
+   91,
+   871,
+   915
+  ],
+  "kind": "letter"
+ },
+ "bn_one": {
+  "ch": "১",
+  "adv": 925,
+  "ink_after": [
+   145,
+   -18,
+   758,
+   1183
+  ],
+  "kind": "letter"
+ },
+ "bn_two": {
+  "ch": "২",
+  "adv": 1009,
+  "ink_after": [
+   91,
+   -130,
+   961,
+   1163
+  ],
+  "kind": "letter"
+ },
+ "bn_three": {
+  "ch": "৩",
+  "adv": 1068,
+  "ink_after": [
+   -2,
+   51,
+   968,
+   1061
+  ],
+  "kind": "letter"
+ },
+ "bn_four": {
+  "ch": "৪",
+  "adv": 1046,
+  "ink_after": [
+   72,
+   69,
+   834,
+   1188
+  ],
+  "kind": "letter"
+ },
+ "bn_five": {
+  "ch": "৫",
+  "adv": 1054,
+  "ink_after": [
+   95,
+   55,
+   965,
+   1134
+  ],
+  "kind": "letter"
+ },
+ "bn_six": {
+  "ch": "৬",
+  "adv": 1017,
+  "ink_after": [
+   12,
+   42,
+   933,
+   1144
+  ],
+  "kind": "letter"
+ },
+ "bn_seven": {
+  "ch": "৭",
+  "adv": 1060,
+  "ink_after": [
+   206,
+   19,
+   938,
+   1130
+  ],
+  "kind": "letter"
+ },
+ "bn_eight": {
+  "ch": "৮",
+  "adv": 1087,
+  "ink_after": [
+   33,
+   61,
+   967,
+   1142
+  ],
+  "kind": "letter"
+ },
+ "bn_nine": {
+  "ch": "৯",
+  "adv": 1015,
+  "ink_after": [
+   56,
+   30,
+   914,
+   1194
+  ],
+  "kind": "letter"
+ },
+ "bn_candrabindu": {
+  "ch": "ঁ",
+  "cp": 2433,
+  "adv": 30,
+  "ink_after": [
+   -645,
+   1293,
+   -128,
+   1651
+  ],
+  "kind": "sign"
+ },
+ "bn_anusvara": {
+  "ch": "ং",
+  "cp": 2434,
+  "adv": 644,
+  "ink_after": [
+   82,
+   -130,
+   709,
+   1098
+  ],
+  "kind": "sign"
+ },
+ "bn_visarga": {
+  "ch": "ঃ",
+  "cp": 2435,
+  "adv": 669,
+  "ink_after": [
+   146,
+   17,
+   609,
+   1107
+  ],
+  "kind": "sign"
+ },
+ "bn_aakaar": {
+  "ch": "া",
+  "cp": 2494,
+  "adv": 442,
+  "ink_after": [
+   -177,
+   -42,
+   454,
+   1336
+  ],
+  "kind": "sign"
+ },
+ "bn_ikaar": {
+  "ch": "ি",
+  "cp": 2495,
+  "adv": 417,
+  "ink_after": [
+   -51,
+   -29,
+   1070,
+   1624
+  ],
+  "kind": "sign"
+ },
+ "bn_iikaar": {
+  "ch": "ী",
+  "cp": 2496,
+  "adv": 442,
+  "ink_after": [
+   -786,
+   -19,
+   467,
+   1675
+  ],
+  "kind": "sign"
+ },
+ "bn_ukaar": {
+  "ch": "ু",
+  "cp": 2497,
+  "adv": 30,
+  "ink_after": [
+   -620,
+   -383,
+   89,
+   210
+  ],
+  "kind": "sign"
+ },
+ "bn_uukaar": {
+  "ch": "ূ",
+  "cp": 2498,
+  "adv": 30,
+  "ink_after": [
+   -508,
+   -493,
+   175,
+   160
+  ],
+  "kind": "sign"
+ },
+ "bn_rikaar": {
+  "ch": "ৃ",
+  "cp": 2499,
+  "adv": 30,
+  "ink_after": [
+   -598,
+   -525,
+   -63,
+   173
+  ],
+  "kind": "sign"
+ },
+ "bn_ekaar": {
+  "ch": "ে",
+  "cp": 2503,
+  "adv": 632,
+  "ink_after": [
+   -35,
+   23,
+   644,
+   1151
+  ],
+  "kind": "sign"
+ },
+ "bn_aikaar": {
+  "ch": "ৈ",
+  "cp": 2504,
+  "adv": 620,
+  "ink_after": [
+   -126,
+   13,
+   648,
+   1603
+  ],
+  "kind": "sign"
+ },
+ "bn_okaar": {
+  "ch": "ো",
+  "cp": 2507,
+  "adv": 1615,
+  "ink_after": [
+   -38,
+   -45,
+   1647,
+   1339
+  ],
+  "kind": "sign"
+ },
+ "bn_aukaar": {
+  "ch": "ৌ",
+  "cp": 2508,
+  "adv": 1718,
+  "ink_after": [
+   -129,
+   -45,
+   1733,
+   1607
+  ],
+  "kind": "sign"
+ },
+ "danda": {
+  "ch": "।",
+  "cp": 2404,
+  "adv": 681,
+  "ink_after": [
+   326,
+   -51,
+   458,
+   1034
+  ],
+  "kind": "punct"
+ },
+ "period": {
+  "ch": ".",
+  "cp": 46,
+  "adv": 540,
+  "ink_after": [
+   128,
+   -40,
+   386,
+   218
+  ],
+  "kind": "punct"
+ },
+ "comma": {
+  "ch": ",",
+  "cp": 44,
+  "adv": 540,
+  "ink_after": [
+   118,
+   -304,
+   425,
+   218
+  ],
+  "kind": "punct"
+ },
+ "semicolon": {
+  "ch": ";",
+  "cp": 59,
+  "adv": 597,
+  "ink_after": [
+   115,
+   -307,
+   428,
+   952
+  ],
+  "kind": "punct"
+ },
+ "colon": {
+  "ch": ":",
+  "cp": 58,
+  "adv": 597,
+  "ink_after": [
+   155,
+   -40,
+   412,
+   949
+  ],
+  "kind": "punct"
+ },
+ "hyphen": {
+  "ch": "-",
+  "cp": 45,
+  "adv": 710,
+  "ink_after": [
+   74,
+   383,
+   606,
+   540
+  ],
+  "kind": "punct"
+ },
+ "emdash": {
+  "ch": "—",
+  "cp": 8212,
+  "adv": 1148,
+  "ink_after": [
+   91,
+   523,
+   1004,
+   654
+  ],
+  "kind": "punct"
+ },
+ "slash": {
+  "ch": "/",
+  "cp": 47,
+  "adv": 597,
+  "ink_after": [
+   -39,
+   -235,
+   632,
+   1411
+  ],
+  "kind": "punct"
+ },
+ "quoteleft": {
+  "ch": "‘",
+  "cp": 8216,
+  "adv": 507,
+  "ink_after": [
+   102,
+   855,
+   406,
+   1361
+  ],
+  "kind": "punct"
+ },
+ "quoteright": {
+  "ch": "’",
+  "cp": 8217,
+  "adv": 507,
+  "ink_after": [
+   110,
+   804,
+   417,
+   1314
+  ],
+  "kind": "punct"
+ },
+ "quotedblleft": {
+  "ch": "“",
+  "cp": 8220,
+  "adv": 891,
+  "ink_after": [
+   126,
+   854,
+   785,
+   1364
+  ],
+  "kind": "punct"
+ },
+ "quotedblright": {
+  "ch": "”",
+  "cp": 8221,
+  "adv": 911,
+  "ink_after": [
+   110,
+   804,
+   769,
+   1314
+  ],
+  "kind": "punct"
+ },
+ "question": {
+  "ch": "?",
+  "cp": 63,
+  "adv": 792,
+  "ink_after": [
+   180,
+   -44,
+   728,
+   1086
+  ],
+  "kind": "punct"
+ },
+ "exclam": {
+  "ch": "!",
+  "cp": 33,
+  "adv": 696,
+  "ink_after": [
+   226,
+   -280,
+   465,
+   1075
+  ],
+  "kind": "punct"
+ }
+}

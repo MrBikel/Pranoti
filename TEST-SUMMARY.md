@@ -2,6 +2,17 @@
 
 > **Status: experimental public beta, not production-ready.** These results cover bounded checks only and are not expert type-design sign-off or broad compatibility testing.
 
+## v0.160-beta
+
+- FontTools table comparison vs v0.120 recorded changes limited to GPOS, glyf, hmtx, cmap, head, name, maxp and loca. GSUB, GDEF, OS/2 and attribution/license name records were preserved. Glyph count is 652. Advances are unchanged; side bearings follow the new outlines (hmtx lsb = new outline xMin, v0.150 precedent); the derived `hhea.minRightSideBearing` moved -654 -> -1155 (the wider re-traced marks) and matches the value derived from the font's own glyf/hmtx data.
+- HarfBuzz checks passed for **22 representative shaping samples**, including the exact offsets for `কাঁ` (−450,+125), `চাঁ` (−278,+125), and `ক্ষ্মাঁ` (−632,+125) at UPM 1536. Sample results are in `checks/harfbuzz-22-samples-v0.160.tsv`.
+- **1,369/1,369** Bengali consonant-pair regression checks matched the v0.120 baseline; the recorded grid has no `.notdef` results. Data is in `checks/consonant-pair-grid-v0.160.tsv`.
+- Ink boxes: rasterised true ink top vs the v0.150 target, worst error 5 units over all 83 re-traced glyphs. Data is in `checks/ink-boxes-v0.160.tsv`.
+- The 4 new glyphs (U+0980, U+09FB, U+09FC, U+09FE) still render (no `.notdef`) and shape correctly. Candrabindu anchors are unchanged.
+- OpenType Sanitizer **8.2.1** reported "File sanitized successfully." FontForge **20230101** validation flagged 85 glyphs — all 83 re-traced glyphs with bit 5 only (no FontForge anchor points, expected for traced outlines, same kind as v0.150), plus the 2 pre-existing (bn_anji, bn_vedic_anusvara). Near-duplicate-point flags (bit 2) fell from 28 glyphs in v0.150 to 1 (bn_vedic_anusvara, untouched); wrong-direction flags (bit 3): 0. This is not independent design validation.
+- Five FreeType/Pillow RAQM specimens were produced for visual review: a before/after grid of all 83 re-traced glyphs with baseline/headline guides (`specimens/before-after-v0.160.png`), a writing demo (`specimens/v0160-writing-demo.png`), a 200 px close-up of the most-changed glyphs (`specimens/closeup-v0.160.png`), a matched v0.150/v0.160 review at 12/16/24/32 px (`specimens/matched-v0.150-v0.160-review.png`), and the chosen vowel cells (`specimens/chosen-vowels-v0.160.png`). All were inspected: all 83 glyphs sit on one baseline and headline with even rhythm, no collisions, nothing floats or sinks. A specimen is illustrative, not proof of rendering across applications or devices.
+- v0.160 has not been owner-tested yet.
+
 ## v0.150-beta
 
 - FontTools table comparison vs v0.140 recorded changes limited to GPOS, glyf, hmtx, cmap, head, name, maxp and loca. GSUB, GDEF, OS/2 and attribution/license name records were preserved. Glyph count is 652. Advances are unchanged; side bearings were re-centred as part of the size normalisation.

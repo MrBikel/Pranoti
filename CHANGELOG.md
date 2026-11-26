@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.160-beta — Experimental public beta
+
+- **Full re-trace of all 69 handwriting glyphs from clean photos** (user's request, 2026-11-26 — he was still not satisfied with v0.150): the v0.130–v0.150 traces came from one blurry photo; the owner sent 37 clean photos and the 69 glyphs (11 vowels best-of-7, 35 consonants, 10 digits, 13 signs/marks) were re-traced from them, plus **14 punctuation glyphs now in his handwriting** (। . , ; : ? ! / — " " ' ' and more). New outlines were fitted to the v0.150 ink boxes (rasterised true-ink top, worst error 5 units) and the v0.140 polish was applied to the new glyphs only. Advances, anchors, GSUB/GPOS/GDEF and all the base font glyphs are untouched. Full per-glyph log: `RE-TRACE-LOG-v0.160.md`. Build: `tools/build_pranoti_v0160_beta.py`.
+- **His clean handwriting is genuinely ~25% wider than the v0.150 font** (median width ratio ≈ 1.25, verified across 4 independent photos to 1–2% — not a photo artefact). Advances were kept, so text is denser and bolder; nothing collides. If the owner finds it too dense, the fix is wider advances, not narrower glyphs.
+- **Two judgement calls, both flagged to the owner:** bn_anusvara (ং) lost a stray pen flick below its loop (the v0.150 glyph carried the same stray); bn_okaar (ো) and bn_aukaar (ৌ) are narrow single-stroke forms exactly as he writes them. Both read correctly in context.
+- **Nothing else changed:** verification re-passed 22/22 HarfBuzz samples (3 reviewed candrabindu offsets exact) and 1,369/1,369 consonant-pair checks, OTS sanitised clean; FontForge near-duplicate-point flags fell 28 → 1 glyph. Conjuncts are still from the base font — that is the next batch (v0.170).
+- **Experimental only; not production-ready.** Conjunct ligatures are still from the base font, expert sign-off and broad platform testing remain outstanding; see the [README](README.md) and [test summary](TEST-SUMMARY.md).
+
 ## v0.150-beta — Experimental public beta
 
 - **Size normalisation of all 56 core letters** (user's request, 2026-11-26): every vowel, consonant and digit was mildly rescaled with a uniform (x=y) factor ×0.970–×1.062 about its ink centre, then translated so each letter's ink top and ink centre match the base font's for that letter. Biggest: ত ×1.062, ভ/ক ×1.037; smallest: গ/ধ/ল ×0.970. Advances and side bearings were re-centred but advance widths are unchanged; anchors, GSUB/GPOS/GDEF and all the base font glyphs are untouched. Measured: ink-top error is now exactly 0 for all 56 letters (before: ক −22, ঘ −21, ট's loop −26, ড's loop −27, digits −18…−27); ink-area spread narrowed 0.836–1.260 → 0.888–1.188; narrow-side width error narrowed −97 → −73. Full per-glyph log: `SIZE-LOG-v0.150.md`. Build: `tools/build_pranoti_v0150_beta.py`.
