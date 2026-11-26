@@ -1,0 +1,13 @@
+PRANOTI v0.161-beta — EXPERIMENTAL PUBLIC BETA: TEST SUMMARY
+v0.120 SHA-256: 9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748
+v0.160 SHA-256: 2a50aafe90584e1868fd6dd85c8e03f61cbab46b7ae3333efc9d8e25789ba614
+v0.161 SHA-256: 9a46dd667efe2cc62b0d5d4cae590796f17cb99990e69c7c07fc7b415bdb5e77
+Reviewed HarfBuzz C offsets preserved exactly at UPM 1536: কাঁ −450,+125; চাঁ −278,+125; ক্ষ্মাঁ −632,+125.
+HarfBuzz representative samples: 22; all exact context, substitution, cluster and advance checks passed: True.
+Consonant pair grid: 1369/1369 identical; .notdef=0.
+Weight-evening: 17 glyphs adjusted by FontForge changeWeight (pass 1: 13 thinned, 5 thickened, capped at +/-16 units; pass 2: bn_ai/bn_i/bn_e/bn_yya thinned a further -16 each); bn_anusvara REVERTED to v0.160 (its -15 thin created a degenerate kink tripping validate 0x4; half-delta retry also failed). Advances, anchors, GSUB/GPOS/GDEF unchanged; letter stroke median still 84.5, spread narrowed 69-120 to 75.6-92.5.
+New glyphs: U+0980, U+09FB, U+09FC, U+09FE still rendering; candrabindu anchors unchanged.
+FontTools table comparison: only GPOS, glyf, hmtx, cmap, head, name, maxp, loca differ; GSUB, GDEF, OS/2, attribution and license name records preserved.
+Matched FreeType/Pillow RAQM specimen generated: 1200 x 2532 pixels.
+Release status: experimental public beta only; not production signed off.
+RESULT: PASS for the listed isolated shaping and regression checks; OTS and FontForge are reported separately.

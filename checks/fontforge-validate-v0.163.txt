@@ -1,0 +1,12 @@
+Copyright (c) 2000-2024. See AUTHORS for Contributors.
+ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ with many parts BSD <http://fontforge.org/license.html>. Please read LICENSE.
+ Version: 20230101
+ Based on sources from 2024-03-31 07:36 UTC-ML-D-GDK3.
+PythonUI_Init()
+copyUIMethodsToBaseTable()
+Program root: /usr
+Pranoti-Regular-v0.163-beta.ttf: 64 glyphs with validation flags out of 65984
+  bit 2 (value 4): 1 glyphs
+  bit 5 (value 32): 64 glyphs
+  flagged glyphs: comma=32, period=32, bn_candrabindu=32, bn_anusvara=32, bn_visarga=32, bn_a=32, bn_aa=32, bn_ii=32, bn_u=32, bn_uu=32, bn_ri=32, bn_o=32, bn_ka=32, bn_kha=32, bn_ga=32, bn_gha=32, bn_nga=32, bn_ca=32, bn_cha=32, bn_ja=32, bn_jha=32, bn_nya=32, bn_ttha=32, bn_dda=32, bn_ddha=32, bn_nna=32, bn_ta=32, bn_tha=32, bn_da=32, bn_dha=32, bn_na=32, bn_pha=32, bn_ba=32, bn_bha=32, bn_ma=32, bn_ya=32, bn_ra=32, bn_la=32, bn_sha=32, bn_ssa=32, bn_sa=32, bn_ha=32, bn_aakaar=32, bn_iikaar=32, bn_ukaar=32, bn_rikaar=32, bn_ekaar=32, bn_aukaar=32, bn_rra=32, bn_rha=32, bn_zero=32, bn_two=32, bn_three=32, bn_four=32, bn_five=32, bn_seven=32, bn_eight=32, bn_nine=32, quoteleft=32, quoteright=32, quotedblleft=32, quotedblright=32, bn_anji=32, bn_vedic_anusvara=36

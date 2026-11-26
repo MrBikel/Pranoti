@@ -1,0 +1,13 @@
+PRANOTI v0.162-beta — EXPERIMENTAL PUBLIC BETA: TEST SUMMARY
+v0.120 SHA-256: 9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748
+v0.161 SHA-256: 9a46dd667efe2cc62b0d5d4cae590796f17cb99990e69c7c07fc7b415bdb5e77
+v0.162 SHA-256: 8a4812d097a95cf1c44dfa890875d2aadc100220c20d9034461d22b5d1309f14
+Reviewed HarfBuzz C offsets preserved exactly at UPM 1536: কাঁ −450,+125; চাঁ −278,+125; ক্ষ্মাঁ −632,+125.
+HarfBuzz representative samples: 22; all exact context, substitution, cluster and advance checks passed: True.
+Consonant pair grid: 1369/1369 identical; .notdef=0.
+Punctuation fine-tuning: 10 glyphs adjusted (danda + doubledanda stretched to headline 1157; colon dots aligned at 298 and matched to 300 wide; semicolon dot 375->300; question dot 123->280; exclam dot 161->280 centred under bar; hyphen 840->532; slash changeWeight -20 to 85.9; backslash -55 to 92.5; emdash +25 to 130.6). No reverts. Advances, anchors, GSUB/GPOS/GDEF unchanged; all 83 re-traced letter ink boxes identical to v0.161.
+New glyphs: U+0980, U+09FB, U+09FC, U+09FE still rendering; candrabindu anchors unchanged.
+FontTools table comparison: only GPOS, glyf, hmtx, cmap, head, name, maxp, loca differ; GSUB, GDEF, OS/2, attribution and license name records preserved.
+Matched FreeType/Pillow RAQM specimen generated: 1200 x 2532 pixels.
+Release status: experimental public beta only; not production signed off.
+RESULT: PASS for the listed isolated shaping and regression checks; OTS and FontForge are reported separately.
