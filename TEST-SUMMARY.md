@@ -2,6 +2,16 @@
 
 > **Status: experimental public beta, not production-ready.** These results cover bounded checks only and are not expert type-design sign-off or broad compatibility testing.
 
+## v0.150-beta
+
+- FontTools table comparison vs v0.140 recorded changes limited to GPOS, glyf, hmtx, cmap, head, name, maxp and loca. GSUB, GDEF, OS/2 and attribution/license name records were preserved. Glyph count is 652. Advances are unchanged; side bearings were re-centred as part of the size normalisation.
+- HarfBuzz checks passed for **22 representative shaping samples**, including the exact offsets for `কাঁ` (−450,+125), `চাঁ` (−278,+125), and `ক্ষ্মাঁ` (−632,+125) at UPM 1536. Sample results are in `checks/harfbuzz-22-samples-v0.150.tsv`.
+- **1,369/1,369** Bengali consonant-pair regression checks matched the v0.120 baseline; the recorded grid has no `.notdef` results. Data is in `checks/consonant-pair-grid-v0.150.tsv`.
+- The 4 new glyphs (U+0980, U+09FB, U+09FC, U+09FE) still render (no `.notdef`) and shape correctly. Candrabindu anchors are unchanged.
+- OpenType Sanitizer **8.2.1** reported “File sanitized successfully.” FontForge **20230101** read the font and reported 652 glyphs; its validation returned 36, identical to v0.140 (no new flags). This is not independent design validation.
+- Three FreeType/Pillow RAQM specimens were produced for visual review: a before/after grid of all 56 core letters with baseline/headline guides (`specimens/before-after-v0.150.png`), a writing demo (`specimens/v0150-writing-demo.png`), a 200 px + 64 px close-up of the most-changed glyphs (`specimens/closeup-v0.150.png`), and a matched v0.140/v0.150 review at 12/16/24/32 px (`specimens/matched-v0.140-v0.150-review.png`). All were inspected: all 56 letters sit on one baseline and headline with even rhythm, no collisions, nothing floats or sinks. A specimen is illustrative, not proof of rendering across applications or devices.
+- v0.150 has not been owner-tested yet.
+
 ## v0.140-beta
 
 - FontTools table comparison vs v0.120 recorded changes limited to GPOS, GDEF (new glyph classes only, from v0.130), glyf, hmtx, cmap, head, name, maxp and loca. GSUB, OS/2 and attribution/license name records were preserved. Glyph count is 652. hmtx is unchanged vs v0.130 (verified by the build assertion); only the derived `hhea.minRightSideBearing` moved -660 -> -654 (bn_ikaar's leftmost point moved ~6 units during smoothing — metadata only).

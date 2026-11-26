@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.150-beta — Experimental public beta
+
+- **Size normalisation of all 56 core letters** (user's request, 2026-11-26): every vowel, consonant and digit was mildly rescaled with a uniform (x=y) factor ×0.970–×1.062 about its ink centre, then translated so each letter's ink top and ink centre match AdorshoLipi's for that letter. Biggest: ত ×1.062, ভ/ক ×1.037; smallest: গ/ধ/ল ×0.970. Advances and side bearings were re-centred but advance widths are unchanged; anchors, GSUB/GPOS/GDEF and all AdorshoLipi glyphs are untouched. Measured: ink-top error is now exactly 0 for all 56 letters (before: ক −22, ঘ −21, ট's loop −26, ড's loop −27, digits −18…−27); ink-area spread narrowed 0.836–1.260 → 0.888–1.188; narrow-side width error narrowed −97 → −73. Full per-glyph log: `SIZE-LOG-v0.150.md`. Build: `tools/build_pranoti_v0150_beta.py`.
+- **One artificial-engineering fix:** ঞ had two degenerate contour slivers rendering as stray diagonal hairlines — deleted; the glyph is clean and still reads as ঞ. No stroke extensions were performed: loop bottoms 28–40 units short (ঠ, ড, ত), ঙ's hook instead of a full matra, and ধ's pinched loop were deliberately left — they are the pen's character, not defects worth risky surgery at this stage.
+- **Nothing else changed:** verification re-passed 22/22 HarfBuzz samples (3 reviewed candrabindu offsets exact) and 1,369/1,369 consonant-pair checks, OTS sanitised clean; FontForge validation unchanged at 36 (same as v0.140, no new flags). Residual stroke-weight variation remains (গ/ধ/ল/ণ a touch heavy, ত/ঔ/ঙ/ও a touch light) — full weight normalisation would need skeleton-based re-outlining and risks changing the handwriting character.
+- **Experimental only; not production-ready.** Conjunct ligatures are still AdorshoLipi, expert sign-off and broad platform testing remain outstanding; see the [README](README.md) and [test summary](TEST-SUMMARY.md).
+
 ## v0.140-beta — Experimental public beta
 
 - **Polish & sharpen pass on the 73 handwriting glyphs** (user's request, 2026-11-26): one pass of a 7-point binomial smoothing kernel over each outline contour (per-point move capped at 5 units, max bbox drift 5 units) plus merging of near-duplicate points. Same handwriting, cleaner and sharper edges. Measured: points 23,413 -> 23,345; median stroke width stays ~110 units (target ~112); median stroke-width variation (IQR) 22.2 -> 19.5 units (12% narrower); FontForge bit-4 flags 33 -> 28 glyphs. Full per-glyph log: `POLISH-LOG-v0.140.md`. Build: `tools/build_pranoti_v0140_beta.py`.
