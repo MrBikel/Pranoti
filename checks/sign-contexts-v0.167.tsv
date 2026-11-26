@@ -1,0 +1,17 @@
+text	v0.166_glyphs	v0.167_glyphs	identical	note
+কা	bn_ka,bn_aakaar	bn_ka,bn_aakaar	1	
+কি	bn_ikaar,bn_ka	bn_ikaar,bn_ka	1	
+কী	bn_ka,bn_iikaar	bn_ka,bn_iikaar	1	
+কু	bn_ka,bn_ukaar	bn_ka,bn_ukaar	1	
+কূ	bn_ka,bn_uukaar	bn_ka,bn_uukaar	1	
+কৃ	bn_ka,bn_rikaar	bn_ka,bn_rikaar	1	
+কে	bn_initekaar,bn_ka	bn_initekaar,bn_ka	1	
+কৈ	bn_initaikaar,bn_ka	bn_initaikaar,bn_ka	1	
+কো	bn_initekaar,bn_ka,bn_aakaar	bn_initekaar,bn_ka,bn_aakaar	1	
+কৌ	bn_initekaar,bn_ka,bn_aumark	bn_initekaar,bn_ka,bn_aumark	1	
+কং	bn_ka,bn_anusvara	bn_ka,bn_anusvara	1	
+কঃ	bn_ka,bn_visarga	bn_ka,bn_visarga	1	
+কাঁ	bn_ka,bn_aakaar,bn_candrabindu	bn_ka,bn_aakaar,bn_candrabindu	1	
+হঠাৎ	bn_ha,bn_ttha,bn_aakaar,Khanda_Ta	bn_ha,bn_ttha,bn_aakaar,Khanda_Ta	0	advance change expected (Khanda_Ta 759->1210)
+সৎ	bn_sa,Khanda_Ta	bn_sa,Khanda_Ta	0	advance change expected (Khanda_Ta 759->1210)
+উৎপাত	bn_u,Khanda_Ta,bn_pa,bn_aakaar,bn_ta	bn_u,Khanda_Ta,bn_pa,bn_aakaar,bn_ta	0	advance change expected (Khanda_Ta 759->1210)
