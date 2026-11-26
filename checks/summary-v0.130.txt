@@ -1,0 +1,11 @@
+PRANOTI v0.130-beta — EXPERIMENTAL PUBLIC BETA: TEST SUMMARY
+v0.120 SHA-256: 9b6c853a268513f0eece232ad85970307315c3ad579e2c4a2c2ca7f6bf34c748
+v0.130 SHA-256: 192881342d917e688000a51b9bea643c9ce21ec6123110b80adcfb6a8fcbebda
+Reviewed HarfBuzz C offsets preserved exactly at UPM 1536: কাঁ −450,+125; চাঁ −278,+125; ক্ষ্মাঁ −632,+125.
+HarfBuzz representative samples: 22; all exact context, substitution, cluster and advance checks passed: True.
+Consonant pair grid: 1369/1369 identical; .notdef=0.
+New glyphs: U+0980, U+09FB, U+09FC, U+09FE added and rendering; candrabindu generalised to anchor-based mark attachment.
+FontTools table comparison: only GPOS, glyf, hmtx, cmap, head, name, maxp, loca differ; GSUB, GDEF, OS/2, attribution and license name records preserved.
+Matched FreeType/Pillow RAQM specimen generated: 1200 x 2532 pixels.
+Release status: experimental public beta only; not production signed off.
+RESULT: PASS for the listed isolated shaping and regression checks; OTS and FontForge are reported separately.
