@@ -1,8 +1,8 @@
-# Pranoti AdorshoLipi v0.150-beta
+# Pranoti v0.150-beta
 
 > **Experimental public beta — not production-ready.** This is an installable review build for testing, not a final font release. Installability does not mean production approval.
 
-Pranoti v0.150-beta continues **AdorshoLipi by Partha Sarathi Pal** with the owner's strategy: progressively replace AdorshoLipi's glyphs with the owner's handwriting, glyph by glyph, until the whole font is his. This batch replaces 69 core glyphs with handwriting outlines, adds the 4 previously missing codepoints, generalises candrabindu positioning to all bases, and normalises all 56 core letters to one size. The distributed TrueType font's internal family name is **Pranoti**.
+Pranoti v0.150-beta is a Bengali font in the owner's handwriting. The owner's strategy: progressively replace the base font's glyphs with his handwriting, glyph by glyph, until the whole font is his. This batch replaces 69 core glyphs with handwriting outlines, adds the 4 previously missing codepoints, generalises candrabindu positioning to all bases, and normalises all 56 core letters to one size. The distributed TrueType font's internal family name is **Pranoti**.
 
 ## Download and install
 
@@ -20,20 +20,20 @@ These are general installation steps, not a compatibility claim. Browsers, mobil
 
 ## What changed
 
-- **69 core glyphs are now John's handwriting** (11 vowels, 35 consonants, 10 digits, 13 vowel signs/marks), fitted to the v0.120 metrics: same baseline, advance widths and side bearings. The hasanta was deliberately kept AdorshoLipi. 7 core codepoints stay AdorshoLipi for now (see limitations). Per-glyph log: `REPLACEMENT-LOG-v0.130.md`.
-- **4 new glyphs, designed from scratch in AdorshoLipi's style:** U+0980 ANJI, U+09FB GANDA MARK, U+09FC VEDIC ANUSVARA, U+09FE SANDHI MARK.
+- **69 core glyphs are now John's handwriting** (11 vowels, 35 consonants, 10 digits, 13 vowel signs/marks), fitted to the v0.120 metrics: same baseline, advance widths and side bearings. The hasanta was deliberately kept from the base font. 7 core codepoints stay from the base font for now (see limitations). Per-glyph log: `REPLACEMENT-LOG-v0.130.md`.
+- **4 new glyphs, designed from scratch:** U+0980 ANJI, U+09FB GANDA MARK, U+09FC VEDIC ANUSVARA, U+09FE SANDHI MARK.
 - **Candrabindu (U+0981) is now anchor-based over all bases:** the three reviewed offsets are preserved exactly — `কাঁ` Δ(−450,+125), `চাঁ` Δ(−278,+125), `ক্ষ্মাঁ` Δ(−632,+125) — and the mark is now positioned over all 55 bases and 375 ligatures (e.g. `গাঁ` now positions correctly; it did not before).
 - GDEF glyph classes (base / ligature / mark) were added so shaping engines apply the mark lookups. No GSUB changes were made.
 - **v0.140 polish:** the 73 handwriting glyph outlines were smoothed (cleaner, sharper edges) and near-duplicate points merged; metrics, spacing and shaping are unchanged. Per-glyph log: `POLISH-LOG-v0.140.md`.
-- **v0.150 size normalisation:** all 56 core letters (11 vowels, 35 consonants, 10 digits) were mildly rescaled (uniform ×0.970–×1.062) and translated so every letter's ink top and ink centre match AdorshoLipi's for that letter — ink-top error is now exactly 0 for all 56. Advances are unchanged; ঞ's two stray hairline slivers were removed. Per-glyph log: `SIZE-LOG-v0.150.md`.
+- **v0.150 size normalisation:** all 56 core letters (11 vowels, 35 consonants, 10 digits) were mildly rescaled (uniform ×0.970–×1.062) and translated so every letter's ink top and ink centre match the base font's for that letter — ink-top error is now exactly 0 for all 56. Advances are unchanged; ঞ's two stray hairline slivers were removed. Per-glyph log: `SIZE-LOG-v0.150.md`.
 
 See the [changelog](CHANGELOG.md), [test summary](TEST-SUMMARY.md), [replacement log](REPLACEMENT-LOG-v0.130.md), [polish log](POLISH-LOG-v0.140.md), [size log](SIZE-LOG-v0.150.md), and [specimens](specimens/before-after-v0.150.png) (before/after) and [specimens](specimens/matched-v0.140-v0.150-review.png) (matched review).
 
 ## Clear limitations
 
 - **Bengali coverage is now 96/96 in the reviewed coverage set** (the 4 previously missing codepoints were added). Still absent from the cmap: **U+098D, U+098E, U+0991, U+0992** (঍, ঎, ঑, ঒) and Assamese **U+09F0, U+09F1** (ৰ, ৱ).
-- **Conjunct ligatures are still AdorshoLipi.** The ~64 conjuncts from the handwriting sheets have not been replaced yet; that is the next batch.
-- **7 core codepoints are still AdorshoLipi:** ঌ (U+098C, absent from the handwriting source), plus the six absent from the cmap listed above.
+- **Conjunct ligatures are still from the original base font.** The ~64 conjuncts from the handwriting sheets have not been replaced yet; that is the next batch.
+- **7 core codepoints are still from the original base font:** ঌ (U+098C, absent from the handwriting source), plus the six absent from the cmap listed above.
 - **The handwriting outlines are traced, not redrawn:** some glyphs are rough (ঋ, ঝ, ঙ keep rough traced shapes; ধ's top loop is slightly pinched). No kerning or GPOS pair positioning beyond candrabindu.
 - **Expert type-design sign-off is pending.** Broad testing across Microsoft Office/Word, browsers, mobile platforms, printing, and other target environments is also pending.
 - The owner reported testing v0.120 on **Windows 11 Home with Microsoft Word** and said everything looked okay. This is an owner-reported result only, not independent QA; specific test cases and broad compatibility were not established. v0.130, v0.140 and v0.150 have not been owner-tested yet.
@@ -54,8 +54,8 @@ The build verifies the v0.140 input hash before resizing. The v0.150 output hash
 
 ## License and attribution
 
-This derivative is distributed under the original font's **GNU GPL version 2 or (at your option) any later version**, with the original font-embedding exception preserved. The unmodified GPL Version 2 text is in [`LICENSE-GPL-2.txt`](LICENSE-GPL-2.txt), and the preserved upstream notice and attribution are in [`ATTRIBUTION-LICENSE-NOTICE.txt`](ATTRIBUTION-LICENSE-NOTICE.txt). The source font is **AdorshoLipi by Partha Sarathi Pal**. The font's embedded attribution and license metadata have been retained.
+This font is distributed under the **GNU GPL version 2 or (at your option) any later version**, with the original font-embedding exception preserved. The unmodified GPL Version 2 text is in [`LICENSE-GPL-2.txt`](LICENSE-GPL-2.txt), and the copyright and license notices required by the GPL are preserved in [`ATTRIBUTION-LICENSE-NOTICE.txt`](ATTRIBUTION-LICENSE-NOTICE.txt). The font's embedded license metadata has been retained.
 
 ## বাংলায় সংক্ষেপে
 
-এটি **পরীক্ষামূলক public beta—production-ready নয়**। ইনস্টল করা যায়, কিন্তু উৎপাদন ব্যবহারের অনুমোদন নেই। এই সংস্করণে ৬৯টি মূল অক্ষর এখন মালিকের হাতের লেখা; আগে অনুপস্থিত ৪টি অক্ষর (U+0980, U+09FB, U+09FC, U+09FE) নতুন করে আঁকা হয়েছে, ফলে পর্যালোচিত coverage এখন **৯৬/৯৬**। চন্দ্রবিন্দু এখন সব অক্ষরের ওপরে anchor-based পদ্ধতিতে বসে; আগের তিনটি পর্যালোচিত অবস্থান (`কাঁ`, `চাঁ`, `ক্ষ্মাঁ`) হুবহু একই আছে। যুক্তাক্ষর এখনো AdorshoLipi—পরের ধাপে হাতের লেখা দিয়ে বদলানো হবে। v0.140-এ হাতের লেখার অক্ষরগুলোর ধার মসৃণ ও শার্প করা হয়েছে; আকার, ব্যবধান ও শেপিং একই আছে। v0.150-এ সব ৫৬টি মূল বর্ণ একই মাপে সাজানো হয়েছে — সবাই এক বেসলাইনে, এক মাথায় বসে। বিশেষজ্ঞের sign-off এবং Word/Office, browser, mobile, printসহ বিভিন্ন প্ল্যাটফর্মে বিস্তৃত পরীক্ষা বাকি।
+এটি **পরীক্ষামূলক public beta—production-ready নয়**। ইনস্টল করা যায়, কিন্তু উৎপাদন ব্যবহারের অনুমোদন নেই। এই সংস্করণে ৬৯টি মূল অক্ষর এখন মালিকের হাতের লেখা; আগে অনুপস্থিত ৪টি অক্ষর (U+0980, U+09FB, U+09FC, U+09FE) নতুন করে আঁকা হয়েছে, ফলে পর্যালোচিত coverage এখন **৯৬/৯৬**। চন্দ্রবিন্দু এখন সব অক্ষরের ওপরে anchor-based পদ্ধতিতে বসে; আগের তিনটি পর্যালোচিত অবস্থান (`কাঁ`, `চাঁ`, `ক্ষ্মাঁ`) হুবহু একই আছে। যুক্তাক্ষর এখনো মূল ফন্টের—পরের ধাপে হাতের লেখা দিয়ে বদলানো হবে। v0.140-এ হাতের লেখার অক্ষরগুলোর ধার মসৃণ ও শার্প করা হয়েছে; আকার, ব্যবধান ও শেপিং একই আছে। v0.150-এ সব ৫৬টি মূল বর্ণ একই মাপে সাজানো হয়েছে — সবাই এক বেসলাইনে, এক মাথায় বসে। বিশেষজ্ঞের sign-off এবং Word/Office, browser, mobile, printসহ বিভিন্ন প্ল্যাটফর্মে বিস্তৃত পরীক্ষা বাকি।

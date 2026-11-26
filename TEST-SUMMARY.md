@@ -40,8 +40,8 @@ The owner reported testing v0.120 on **Windows 11 Home with Microsoft Word** and
 ## Known limitations and remaining work
 
 - Bengali coverage is **96/96** in the reviewed coverage set. Still absent from the cmap: U+098D, U+098E, U+0991, U+0992 and Assamese U+09F0, U+09F1.
-- **Conjunct ligatures are still AdorshoLipi** (~64 conjuncts from the handwriting sheets not yet replaced). That is the next replacement batch.
-- 7 core codepoints are still AdorshoLipi: ঌ (U+098C) plus the six absent from the cmap above. The hasanta was deliberately kept AdorshoLipi.
+- **Conjunct ligatures are still from the base font** (~64 conjuncts from the handwriting sheets not yet replaced). That is the next replacement batch.
+- 7 core codepoints are still from the base font: ঌ (U+098C) plus the six absent from the cmap above. The hasanta was deliberately kept from the base font.
 - Handwriting outlines are traced: ঋ, ঝ, ঙ keep rough shapes; ধ's top loop is slightly pinched. No kerning; no GPOS pair positioning beyond candrabindu.
 - Candrabindu anchors are calibrated for the common aakaar case, so on a bare vowel the mark sits a little right of centre (still over the letter).
 - Expert type-design sign-off remains outstanding.

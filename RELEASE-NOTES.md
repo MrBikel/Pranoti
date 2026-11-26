@@ -1,6 +1,6 @@
 # Pranoti v0.120-beta — experimental public beta
 
-**Not production-ready.** This is an installable test build of AdorshoLipi by Partha Sarathi Pal, with the reviewed TTF preserved byte-for-byte.
+**Not production-ready.** This is an installable test build of Pranoti, with the reviewed TTF preserved byte-for-byte.
 
 ## Scope
 
